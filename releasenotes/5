@@ -1,1 +1,10 @@
-Test release note
+* This version is slow. We are working to make
+  it fast for everyone. In the meanwhile we\'re
+  providing accelerators per commercial request.
+* Plain numbers by default are in range 0-100
+  to use different range, write desired number
+  in any cell or formula. E.g. -5 and 200
+* Formulas supported: AND, +, -, *, /, =, <, >, <>
+* Floating point numbers like 0.1 not yet supported
+
+Please request support at <a href="mailto:support@hyperc.com">support@hyperc.com</a>
