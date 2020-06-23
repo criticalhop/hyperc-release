@@ -1,5 +1,5 @@
 * This version is slow. We are working to make
-  it fast for everyone. In the meanwhile we\'re
+  it fast for everyone. In the meanwhile we're
   providing accelerators per commercial request.
 * Plain numbers by default are in range 0-100
   to use different range, write desired number
