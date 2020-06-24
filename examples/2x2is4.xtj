@@ -1,0 +1,74 @@
+{
+    "version": 1.1,
+    "fileType": "HyperC Project File in XTJ Format",
+    "fileName": "",
+    "created": 1593040381175,
+    "modified": 1593040381175,
+    "uuid": "",
+    "projectName": "untitled_project",
+    "projectDescription": "",
+    "tableData": [
+        {
+            "id": "msource_1_1593035616940",
+            "name": "Input formula",
+            "records": [
+                {
+                    "recid": 1,
+                    "A": "0",
+                    "B": "*",
+                    "C": "0",
+                    "D": "=",
+                    "E": "4"
+                }
+            ]
+        }
+    ],
+    "actionData": {
+        "action_1_1593038495793": {
+            "metadata": {
+                "is_required": true,
+                "name": "check num",
+                "id": "action_1_1593038495793"
+            },
+            "tables": [
+                {
+                    "changes": [],
+                    "searches": [],
+                    "view_id": "action_1_1593038495793table21593038675888",
+                    "table_id": "msource_1_1593035616940",
+                    "view_name": " View 2 of Input formula",
+                    "table_name": "Input formula",
+                    "mode": "rewrite_mode",
+                    "filter_mode": "view",
+                    "filter": "E1=A1*C1"
+                }
+            ]
+        },
+        "action_2_1593039326199": {
+            "metadata": {
+                "is_required": false,
+                "name": "increase",
+                "id": "action_2_1593039326199"
+            },
+            "tables": [
+                {
+                    "changes": [
+                        {
+                            "recid": 1,
+                            "A": "=A1+1",
+                            "C": "=C1+1"
+                        }
+                    ],
+                    "searches": [],
+                    "view_id": "action_2_1593039326199table31593039338913",
+                    "table_id": "msource_1_1593035616940",
+                    "view_name": " View 3 of Input formula",
+                    "table_name": "Input formula",
+                    "mode": "rewrite_mode",
+                    "filter_mode": "view",
+                    "filter": ""
+                }
+            ]
+        }
+    }
+}
