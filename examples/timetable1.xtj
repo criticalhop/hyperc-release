@@ -1,0 +1,424 @@
+{
+    "version": 1.1,
+    "fileType": "HyperC Project File in XTJ Format",
+    "fileName": "",
+    "created": 1593132088663,
+    "modified": 1593132088663,
+    "uuid": "",
+    "projectName": "untitled_project",
+    "projectDescription": "",
+    "tableData": [
+        {
+            "id": "msource_1_1593130438334",
+            "name": "Timetable",
+            "records": [
+                {
+                    "recid": 1,
+                    "A": "Time",
+                    "B": "Monday",
+                    "C": "Tuesday",
+                    "D": "Wednesday",
+                    "E": "Thursday",
+                    "F": "Friday",
+                    "G": "Slot"
+                },
+                {
+                    "recid": 2,
+                    "A": "9:00",
+                    "G": "True",
+                    "B": "---",
+                    "C": "---",
+                    "D": "---",
+                    "E": "---",
+                    "F": "---"
+                },
+                {
+                    "recid": 3,
+                    "A": "10:00",
+                    "G": "True",
+                    "B": "---",
+                    "C": "---",
+                    "D": "---",
+                    "E": "---",
+                    "F": "---"
+                },
+                {
+                    "recid": 4,
+                    "A": "11:00",
+                    "G": "True",
+                    "B": "---",
+                    "C": "---",
+                    "D": "---",
+                    "E": "---",
+                    "F": "---"
+                },
+                {
+                    "recid": 5,
+                    "A": "12:00",
+                    "G": "True",
+                    "B": "---",
+                    "C": "---",
+                    "D": "---",
+                    "E": "---",
+                    "F": "---"
+                },
+                {
+                    "recid": 6,
+                    "A": "13:00",
+                    "G": "True",
+                    "B": "---",
+                    "C": "---",
+                    "D": "---",
+                    "E": "---",
+                    "F": "---"
+                }
+            ]
+        },
+        {
+            "id": "msource_2_1593130464875",
+            "name": "Classes",
+            "records": [
+                {
+                    "recid": 1,
+                    "A": "Class",
+                    "B": "Hours",
+                    "C": "Hours planned",
+                    "D": "Done?"
+                },
+                {
+                    "recid": 2,
+                    "A": "Math",
+                    "B": "3",
+                    "C": "0",
+                    "D": "False"
+                },
+                {
+                    "recid": 3,
+                    "A": "Physics",
+                    "B": "2",
+                    "C": "0",
+                    "D": "False"
+                },
+                {
+                    "recid": 4,
+                    "A": "Science",
+                    "B": "6",
+                    "C": "0",
+                    "D": "False"
+                },
+                {
+                    "recid": 5,
+                    "A": "Astronomy",
+                    "B": "3",
+                    "C": "0",
+                    "D": "False"
+                },
+                {
+                    "recid": 6,
+                    "A": "Arts",
+                    "B": "2",
+                    "C": "0",
+                    "D": "False"
+                },
+                {
+                    "recid": 7,
+                    "A": "Language",
+                    "B": "6",
+                    "C": "0",
+                    "D": "False"
+                },
+                {
+                    "recid": 8,
+                    "A": "History",
+                    "B": "3",
+                    "C": "0",
+                    "D": "False"
+                }
+            ]
+        },
+        {
+            "id": "msource_14_1593131693415",
+            "name": "Status",
+            "records": [
+                {
+                    "recid": 1,
+                    "A": "Classes",
+                    "B": "Done"
+                },
+                {
+                    "recid": 2,
+                    "A": "7",
+                    "B": "0"
+                }
+            ]
+        }
+    ],
+    "actionData": {
+        "action_1_1593130775923": {
+            "metadata": {
+                "is_required": false,
+                "name": "Put Monday",
+                "id": "action_1_1593130775923"
+            },
+            "tables": [
+                {
+                    "changes": [
+                        {
+                            "recid": 3,
+                            "C": "=C1+1"
+                        }
+                    ],
+                    "searches": [],
+                    "view_id": "action_1_1593130775923table31593130826097",
+                    "table_id": "msource_2_1593130464875",
+                    "view_name": "RowSelect3 of Classes",
+                    "table_name": "Classes",
+                    "mode": "rewrite_mode",
+                    "filter_mode": "filter",
+                    "filter": "D1=False"
+                },
+                {
+                    "changes": [
+                        {
+                            "recid": 3,
+                            "B": "='RowSelect3 of Classes'!A1"
+                        }
+                    ],
+                    "searches": [],
+                    "view_id": "action_1_1593130775923table61593130853453",
+                    "table_id": "msource_1_1593130438334",
+                    "view_name": "RowSelect6 of Timetable",
+                    "table_name": "Timetable",
+                    "mode": "rewrite_mode",
+                    "filter_mode": "filter",
+                    "filter": "B1=\"---\""
+                }
+            ]
+        },
+        "action_2_1593130787751": {
+            "metadata": {
+                "is_required": false,
+                "name": "Put Tuesday",
+                "id": "action_2_1593130787751"
+            },
+            "tables": [
+                {
+                    "changes": [
+                        {
+                            "recid": 3,
+                            "C": "=C1+1"
+                        }
+                    ],
+                    "searches": [],
+                    "view_id": "action_2_1593130787751table51593131487695",
+                    "table_id": "msource_2_1593130464875",
+                    "view_name": "RowSelect5 of Classes",
+                    "table_name": "Classes",
+                    "mode": "rewrite_mode",
+                    "filter_mode": "filter",
+                    "filter": "D1=False"
+                },
+                {
+                    "changes": [
+                        {
+                            "recid": 3,
+                            "C": "='RowSelect5 of Classes'!A1"
+                        }
+                    ],
+                    "searches": [],
+                    "view_id": "action_2_1593130787751table61593131489293",
+                    "table_id": "msource_1_1593130438334",
+                    "view_name": "RowSelect6 of Timetable",
+                    "table_name": "Timetable",
+                    "mode": "rewrite_mode",
+                    "filter_mode": "filter",
+                    "filter": "C1=\"---\""
+                }
+            ]
+        },
+        "action_3_1593130795229": {
+            "metadata": {
+                "is_required": false,
+                "name": "Put Wednesday",
+                "id": "action_3_1593130795229"
+            },
+            "tables": [
+                {
+                    "changes": [
+                        {
+                            "recid": 3,
+                            "C": "=C1+1"
+                        }
+                    ],
+                    "searches": [],
+                    "view_id": "action_3_1593130795229table71593131508750",
+                    "table_id": "msource_2_1593130464875",
+                    "view_name": "RowSelect7 of Classes",
+                    "table_name": "Classes",
+                    "mode": "rewrite_mode",
+                    "filter_mode": "filter",
+                    "filter": "D1=False"
+                },
+                {
+                    "changes": [
+                        {
+                            "recid": 3,
+                            "D": "='RowSelect7 of Classes'!A1"
+                        }
+                    ],
+                    "searches": [],
+                    "view_id": "action_3_1593130795229table81593131510208",
+                    "table_id": "msource_1_1593130438334",
+                    "view_name": "RowSelect8 of Timetable",
+                    "table_name": "Timetable",
+                    "mode": "rewrite_mode",
+                    "filter_mode": "filter",
+                    "filter": "D1=\"---\""
+                }
+            ]
+        },
+        "action_4_1593130803004": {
+            "metadata": {
+                "is_required": false,
+                "name": "Put Thursday",
+                "id": "action_4_1593130803004"
+            },
+            "tables": [
+                {
+                    "changes": [
+                        {
+                            "recid": 3,
+                            "C": "=C1+1"
+                        }
+                    ],
+                    "searches": [],
+                    "view_id": "action_4_1593130803004table91593131528163",
+                    "table_id": "msource_2_1593130464875",
+                    "view_name": "RowSelect9 of Classes",
+                    "table_name": "Classes",
+                    "mode": "rewrite_mode",
+                    "filter_mode": "filter",
+                    "filter": "D1=False"
+                },
+                {
+                    "changes": [
+                        {
+                            "recid": 3,
+                            "E": "='RowSelect9 of Classes'!A1"
+                        }
+                    ],
+                    "searches": [],
+                    "view_id": "action_4_1593130803004table101593131529189",
+                    "table_id": "msource_1_1593130438334",
+                    "view_name": "RowSelect10 of Timetable",
+                    "table_name": "Timetable",
+                    "mode": "rewrite_mode",
+                    "filter_mode": "filter",
+                    "filter": "E1=\"---\""
+                }
+            ]
+        },
+        "action_5_1593130811045": {
+            "metadata": {
+                "is_required": false,
+                "name": "Put Friday",
+                "id": "action_5_1593130811045"
+            },
+            "tables": [
+                {
+                    "changes": [
+                        {
+                            "recid": 3,
+                            "C": "=C1+1"
+                        }
+                    ],
+                    "searches": [],
+                    "view_id": "action_5_1593130811045table111593131549182",
+                    "table_id": "msource_2_1593130464875",
+                    "view_name": "RowSelect11 of Classes",
+                    "table_name": "Classes",
+                    "mode": "rewrite_mode",
+                    "filter_mode": "filter",
+                    "filter": "D1=False"
+                },
+                {
+                    "changes": [
+                        {
+                            "recid": 3,
+                            "F": "='RowSelect11 of Classes'!A1"
+                        }
+                    ],
+                    "searches": [],
+                    "view_id": "action_5_1593130811045table121593131550356",
+                    "table_id": "msource_1_1593130438334",
+                    "view_name": "RowSelect12 of Timetable",
+                    "table_name": "Timetable",
+                    "mode": "rewrite_mode",
+                    "filter_mode": "filter",
+                    "filter": "F1=\"---\""
+                }
+            ]
+        },
+        "action_11_1593131587411": {
+            "metadata": {
+                "is_required": false,
+                "name": "Check",
+                "id": "action_11_1593131587411"
+            },
+            "tables": [
+                {
+                    "changes": [
+                        {
+                            "recid": 3,
+                            "D": "True"
+                        }
+                    ],
+                    "searches": [],
+                    "view_id": "action_11_1593131587411table131593131648582",
+                    "table_id": "msource_2_1593130464875",
+                    "view_name": "RowSelect13 of Classes",
+                    "table_name": "Classes",
+                    "mode": "rewrite_mode",
+                    "filter_mode": "filter",
+                    "filter": "=AND(B1=C1, D1=False)"
+                },
+                {
+                    "changes": [
+                        {
+                            "recid": 2,
+                            "B": "=B2+1"
+                        }
+                    ],
+                    "searches": [],
+                    "view_id": "action_11_1593131587411table161593131752331",
+                    "table_id": "msource_14_1593131693415",
+                    "view_name": " View 16 of Status",
+                    "table_name": "Status",
+                    "mode": "rewrite_mode",
+                    "filter_mode": "view",
+                    "filter": ""
+                }
+            ]
+        },
+        "action_12_1593131730519": {
+            "metadata": {
+                "is_required": true,
+                "name": "Done",
+                "id": "action_12_1593131730519"
+            },
+            "tables": [
+                {
+                    "changes": [],
+                    "searches": [],
+                    "view_id": "action_12_1593131730519table151593131739738",
+                    "table_id": "msource_14_1593131693415",
+                    "view_name": " View 15 of Status",
+                    "table_name": "Status",
+                    "mode": "rewrite_mode",
+                    "filter_mode": "view",
+                    "filter": "=A2=B2"
+                }
+            ]
+        }
+    }
+}
