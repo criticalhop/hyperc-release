@@ -1,0 +1,584 @@
+{
+    "version": 1.1,
+    "fileType": "HyperC Project File in XTJ Format",
+    "fileName": "",
+    "created": 1593150088150,
+    "modified": 1593150088150,
+    "uuid": "",
+    "projectName": "untitled_project",
+    "projectDescription": "",
+    "tableData": [
+        {
+            "id": "msource_1_1593146230784",
+            "name": "Base Items Stock",
+            "records": [
+                {
+                    "recid": 1,
+                    "A": "Item",
+                    "B": "Amount",
+                    "C": "Cost"
+                },
+                {
+                    "recid": 2,
+                    "A": "Wheel White",
+                    "B": "5",
+                    "C": "5"
+                },
+                {
+                    "recid": 3,
+                    "A": "Frame",
+                    "B": "5",
+                    "C": "10"
+                },
+                {
+                    "recid": 4,
+                    "A": "Wheel Black",
+                    "B": "0",
+                    "C": "6"
+                }
+            ]
+        },
+        {
+            "id": "msource_2_1593146270932",
+            "name": "Assembled Items Stock",
+            "records": [
+                {
+                    "recid": 1,
+                    "A": "Item",
+                    "B": "Amount"
+                },
+                {
+                    "recid": 2,
+                    "A": "Bicycle 1",
+                    "B": "3"
+                },
+                {
+                    "recid": 3,
+                    "A": "Bicycle 2",
+                    "B": "2"
+                }
+            ]
+        },
+        {
+            "id": "msource_3_1593146295994",
+            "name": "Invoice",
+            "records": [
+                {
+                    "recid": 1,
+                    "C": "Cost",
+                    "A": "Item",
+                    "B": "Type"
+                }
+            ]
+        },
+        {
+            "id": "msource_4_1593146360454",
+            "name": "Order",
+            "records": [
+                {
+                    "recid": 1,
+                    "C": "Rear Wheel",
+                    "A": "#",
+                    "B": "Front Wheel",
+                    "D": "Frame"
+                },
+                {
+                    "recid": 2,
+                    "A": "Order",
+                    "B": "Wheel Black",
+                    "C": "Wheel White",
+                    "D": "Frame"
+                },
+                {
+                    "recid": 3,
+                    "A": "Current",
+                    "B": "---",
+                    "C": "---",
+                    "D": "---"
+                }
+            ]
+        },
+        {
+            "id": "msource_5_1593146403966",
+            "name": "Bikes Components",
+            "records": [
+                {
+                    "recid": 1,
+                    "A": "Item",
+                    "B": "Frame",
+                    "C": "Wheel Front",
+                    "D": "Wheel Rear"
+                },
+                {
+                    "recid": 2,
+                    "A": "Bicycle 1",
+                    "B": "Frame",
+                    "C": "Wheel White",
+                    "D": "Wheel White"
+                },
+                {
+                    "recid": 3,
+                    "A": "Bicycle 2",
+                    "B": "Frame",
+                    "C": "Wheel Black",
+                    "D": "Wheel Black"
+                }
+            ]
+        },
+        {
+            "id": "msource_6_1593147605073",
+            "name": "Labor cost",
+            "records": [
+                {
+                    "recid": 1,
+                    "A": "Labor",
+                    "B": "Cost"
+                },
+                {
+                    "recid": 2,
+                    "A": "Disassemble bike",
+                    "B": "20"
+                },
+                {
+                    "recid": 3,
+                    "A": "Assemble bike",
+                    "B": "30"
+                }
+            ]
+        }
+    ],
+    "actionData": {
+        "action_1_1593147865509": {
+            "metadata": {
+                "is_required": false,
+                "name": "Assemble Bike",
+                "id": "action_1_1593147865509"
+            },
+            "tables": [
+                {
+                    "changes": [
+                        {
+                            "recid": 3,
+                            "B": "=B1-1"
+                        }
+                    ],
+                    "searches": [],
+                    "view_id": "action_1_1593147865509table171593148313615",
+                    "table_id": "msource_1_1593146230784",
+                    "view_name": "RowSelect17 of Base Items Stock",
+                    "table_name": "Base Items Stock",
+                    "mode": "rewrite_mode",
+                    "filter_mode": "filter",
+                    "filter": ""
+                },
+                {
+                    "changes": [
+                        {
+                            "recid": 3,
+                            "B": "=B1-1"
+                        }
+                    ],
+                    "searches": [],
+                    "view_id": "action_1_1593147865509table181593148322645",
+                    "table_id": "msource_1_1593146230784",
+                    "view_name": "RowSelect18 of Base Items Stock",
+                    "table_name": "Base Items Stock",
+                    "mode": "rewrite_mode",
+                    "filter_mode": "filter",
+                    "filter": ""
+                },
+                {
+                    "changes": [
+                        {
+                            "recid": 3,
+                            "B": "=B1-1"
+                        }
+                    ],
+                    "searches": [],
+                    "view_id": "action_1_1593147865509table191593148324812",
+                    "table_id": "msource_1_1593146230784",
+                    "view_name": "RowSelect19 of Base Items Stock",
+                    "table_name": "Base Items Stock",
+                    "mode": "rewrite_mode",
+                    "filter_mode": "filter",
+                    "filter": ""
+                },
+                {
+                    "changes": [
+                        {
+                            "recid": 3,
+                            "B": "='RowSelect17 of Base Items Stock'!A1",
+                            "C": "='RowSelect18 of Base Items Stock'!A1",
+                            "D": "='RowSelect19 of Base Items Stock'!A1"
+                        }
+                    ],
+                    "searches": [],
+                    "view_id": "action_1_1593147865509table201593148330364",
+                    "table_id": "msource_4_1593146360454",
+                    "view_name": " View 20 of Order",
+                    "table_name": "Order",
+                    "mode": "rewrite_mode",
+                    "filter_mode": "view",
+                    "filter": "=B3=\"---\""
+                },
+                {
+                    "changes": [],
+                    "searches": [],
+                    "view_id": "action_1_1593147865509table221593148578206",
+                    "table_id": "msource_6_1593147605073",
+                    "view_name": "RowSelect22 of Labor cost",
+                    "table_name": "Labor cost",
+                    "mode": "rewrite_mode",
+                    "filter_mode": "filter",
+                    "filter": "=A1=\"Assemble bike\""
+                },
+                {
+                    "changes": [
+                        {
+                            "recid": 3,
+                            "B": "Labor",
+                            "C": "='RowSelect22 of Labor cost'!B1",
+                            "A": "='RowSelect22 of Labor cost'!A1"
+                        }
+                    ],
+                    "searches": [],
+                    "view_id": "action_1_1593147865509table211593148333895",
+                    "table_id": "msource_3_1593146295994",
+                    "view_name": "RowSelect21 of Invoice",
+                    "table_name": "Invoice",
+                    "mode": "rewrite_mode",
+                    "filter_mode": "add",
+                    "filter": ""
+                },
+                {
+                    "changes": [
+                        {
+                            "recid": 3,
+                            "B": "Materials",
+                            "A": "='RowSelect17 of Base Items Stock'!A1",
+                            "C": "='RowSelect17 of Base Items Stock'!C1"
+                        }
+                    ],
+                    "searches": [],
+                    "view_id": "action_1_1593147865509table281593148726830",
+                    "table_id": "msource_3_1593146295994",
+                    "view_name": "RowSelect28 of Invoice",
+                    "table_name": "Invoice",
+                    "mode": "rewrite_mode",
+                    "filter_mode": "add",
+                    "filter": ""
+                },
+                {
+                    "changes": [
+                        {
+                            "recid": 3,
+                            "B": "Materials",
+                            "A": "='RowSelect18 of Base Items Stock'!A1",
+                            "C": "='RowSelect18 of Base Items Stock'!C1"
+                        }
+                    ],
+                    "searches": [],
+                    "view_id": "action_1_1593147865509table291593148731655",
+                    "table_id": "msource_3_1593146295994",
+                    "view_name": "RowSelect29 of Invoice",
+                    "table_name": "Invoice",
+                    "mode": "rewrite_mode",
+                    "filter_mode": "add",
+                    "filter": ""
+                },
+                {
+                    "changes": [
+                        {
+                            "recid": 3,
+                            "B": "Materials",
+                            "A": "='RowSelect19 of Base Items Stock'!A1",
+                            "C": "='RowSelect19 of Base Items Stock'!C1"
+                        }
+                    ],
+                    "searches": [],
+                    "view_id": "action_1_1593147865509table301593148735540",
+                    "table_id": "msource_3_1593146295994",
+                    "view_name": "RowSelect30 of Invoice",
+                    "table_name": "Invoice",
+                    "mode": "rewrite_mode",
+                    "filter_mode": "add",
+                    "filter": ""
+                }
+            ]
+        },
+        "action_2_1593147874779": {
+            "metadata": {
+                "is_required": false,
+                "name": "Disassemble Bike",
+                "id": "action_2_1593147874779"
+            },
+            "tables": [
+                {
+                    "changes": [
+                        {
+                            "recid": 3,
+                            "B": "=B1-1"
+                        }
+                    ],
+                    "searches": [],
+                    "view_id": "action_2_1593147874779table81593147995353",
+                    "table_id": "msource_2_1593146270932",
+                    "view_name": "RowSelect8 of Assembled Items Stock",
+                    "table_name": "Assembled Items Stock",
+                    "mode": "rewrite_mode",
+                    "filter_mode": "filter",
+                    "filter": ""
+                },
+                {
+                    "changes": [],
+                    "searches": [],
+                    "view_id": "action_2_1593147874779table91593148027376",
+                    "table_id": "msource_5_1593146403966",
+                    "view_name": "RowSelect9 of Bikes Components",
+                    "table_name": "Bikes Components",
+                    "mode": "rewrite_mode",
+                    "filter_mode": "filter",
+                    "filter": "=A1='RowSelect8 of Assembled Items Stock'!A1"
+                },
+                {
+                    "changes": [
+                        {
+                            "recid": 3,
+                            "B": "=B1+1"
+                        }
+                    ],
+                    "searches": [],
+                    "view_id": "action_2_1593147874779table101593148052815",
+                    "table_id": "msource_1_1593146230784",
+                    "view_name": "RowSelect10 of Base Items Stock",
+                    "table_name": "Base Items Stock",
+                    "mode": "rewrite_mode",
+                    "filter_mode": "filter",
+                    "filter": "='RowSelect9 of Bikes Components'!B1=A1"
+                },
+                {
+                    "changes": [
+                        {
+                            "recid": 3,
+                            "B": "=B1+1"
+                        }
+                    ],
+                    "searches": [],
+                    "view_id": "action_2_1593147874779table111593148096885",
+                    "table_id": "msource_1_1593146230784",
+                    "view_name": "RowSelect11 of Base Items Stock",
+                    "table_name": "Base Items Stock",
+                    "mode": "rewrite_mode",
+                    "filter_mode": "filter",
+                    "filter": "=A1='RowSelect9 of Bikes Components'!C1"
+                },
+                {
+                    "changes": [
+                        {
+                            "recid": 3,
+                            "B": "=B1+1"
+                        }
+                    ],
+                    "searches": [],
+                    "view_id": "action_2_1593147874779table121593148114492",
+                    "table_id": "msource_1_1593146230784",
+                    "view_name": "RowSelect12 of Base Items Stock",
+                    "table_name": "Base Items Stock",
+                    "mode": "rewrite_mode",
+                    "filter_mode": "filter",
+                    "filter": "=A1='RowSelect9 of Bikes Components'!D1"
+                },
+                {
+                    "changes": [],
+                    "searches": [],
+                    "view_id": "action_2_1593147874779table141593148154882",
+                    "table_id": "msource_6_1593147605073",
+                    "view_name": "RowSelect14 of Labor cost",
+                    "table_name": "Labor cost",
+                    "mode": "rewrite_mode",
+                    "filter_mode": "filter",
+                    "filter": "=A1=\"Disassemble bike\""
+                },
+                {
+                    "changes": [
+                        {
+                            "recid": 3,
+                            "A": "='RowSelect14 of Labor cost'!A1",
+                            "B": "Labor",
+                            "C": "='RowSelect14 of Labor cost'!B1"
+                        }
+                    ],
+                    "searches": [],
+                    "view_id": "action_2_1593147874779table131593148139416",
+                    "table_id": "msource_3_1593146295994",
+                    "view_name": "RowSelect13 of Invoice",
+                    "table_name": "Invoice",
+                    "mode": "rewrite_mode",
+                    "filter_mode": "add",
+                    "filter": ""
+                }
+            ]
+        },
+        "action_3_1593147939229": {
+            "metadata": {
+                "is_required": false,
+                "name": "Bike from stock",
+                "id": "action_3_1593147939229"
+            },
+            "tables": [
+                {
+                    "changes": [
+                        {
+                            "recid": 3,
+                            "B": "=B1-1"
+                        }
+                    ],
+                    "searches": [],
+                    "view_id": "action_3_1593147939229table231593148686316",
+                    "table_id": "msource_2_1593146270932",
+                    "view_name": "RowSelect23 of Assembled Items Stock",
+                    "table_name": "Assembled Items Stock",
+                    "mode": "rewrite_mode",
+                    "filter_mode": "filter",
+                    "filter": ""
+                },
+                {
+                    "changes": [],
+                    "searches": [],
+                    "view_id": "action_3_1593147939229table321593149008619",
+                    "table_id": "msource_5_1593146403966",
+                    "view_name": "RowSelect32 of Bikes Components",
+                    "table_name": "Bikes Components",
+                    "mode": "rewrite_mode",
+                    "filter_mode": "filter",
+                    "filter": "=A1='RowSelect23 of Assembled Items Stock'!A1"
+                },
+                {
+                    "changes": [],
+                    "searches": [],
+                    "view_id": "action_3_1593147939229table241593148704908",
+                    "table_id": "msource_1_1593146230784",
+                    "view_name": "RowSelect24 of Base Items Stock",
+                    "table_name": "Base Items Stock",
+                    "mode": "rewrite_mode",
+                    "filter_mode": "filter",
+                    "filter": "=A1='RowSelect32 of Bikes Components'!B1"
+                },
+                {
+                    "changes": [],
+                    "searches": [],
+                    "view_id": "action_3_1593147939229table251593148708389",
+                    "table_id": "msource_1_1593146230784",
+                    "view_name": "RowSelect25 of Base Items Stock",
+                    "table_name": "Base Items Stock",
+                    "mode": "rewrite_mode",
+                    "filter_mode": "filter",
+                    "filter": "=A1='RowSelect32 of Bikes Components'!C1"
+                },
+                {
+                    "changes": [],
+                    "searches": [],
+                    "view_id": "action_3_1593147939229table261593148709560",
+                    "table_id": "msource_1_1593146230784",
+                    "view_name": "RowSelect26 of Base Items Stock",
+                    "table_name": "Base Items Stock",
+                    "mode": "rewrite_mode",
+                    "filter_mode": "filter",
+                    "filter": "=A1='RowSelect32 of Bikes Components'!D1"
+                },
+                {
+                    "changes": [
+                        {
+                            "recid": 3,
+                            "B": "='RowSelect32 of Bikes Components'!C1",
+                            "C": "='RowSelect32 of Bikes Components'!D1",
+                            "D": "='RowSelect32 of Bikes Components'!B1"
+                        }
+                    ],
+                    "searches": [],
+                    "view_id": "action_3_1593147939229table311593148980487",
+                    "table_id": "msource_4_1593146360454",
+                    "view_name": " View 31 of Order",
+                    "table_name": "Order",
+                    "mode": "rewrite_mode",
+                    "filter_mode": "view",
+                    "filter": "=B3=\"---\""
+                },
+                {
+                    "changes": [
+                        {
+                            "recid": 3,
+                            "A": "='RowSelect24 of Base Items Stock'!A1",
+                            "C": "='RowSelect24 of Base Items Stock'!C1",
+                            "B": "Materials"
+                        }
+                    ],
+                    "searches": [],
+                    "view_id": "action_3_1593147939229table331593149142679",
+                    "table_id": "msource_3_1593146295994",
+                    "view_name": "RowSelect33 of Invoice",
+                    "table_name": "Invoice",
+                    "mode": "rewrite_mode",
+                    "filter_mode": "add",
+                    "filter": ""
+                },
+                {
+                    "changes": [
+                        {
+                            "recid": 3,
+                            "A": "='RowSelect25 of Base Items Stock'!A1",
+                            "C": "='RowSelect25 of Base Items Stock'!C1",
+                            "B": "Materials"
+                        }
+                    ],
+                    "searches": [],
+                    "view_id": "action_3_1593147939229table341593149145939",
+                    "table_id": "msource_3_1593146295994",
+                    "view_name": "RowSelect34 of Invoice",
+                    "table_name": "Invoice",
+                    "mode": "rewrite_mode",
+                    "filter_mode": "add",
+                    "filter": ""
+                },
+                {
+                    "changes": [
+                        {
+                            "recid": 3,
+                            "A": "='RowSelect26 of Base Items Stock'!A1",
+                            "C": "='RowSelect26 of Base Items Stock'!C1",
+                            "B": "Materials"
+                        }
+                    ],
+                    "searches": [],
+                    "view_id": "action_3_1593147939229table351593149147823",
+                    "table_id": "msource_3_1593146295994",
+                    "view_name": "RowSelect35 of Invoice",
+                    "table_name": "Invoice",
+                    "mode": "rewrite_mode",
+                    "filter_mode": "add",
+                    "filter": ""
+                }
+            ]
+        },
+        "action_4_1593148261073": {
+            "metadata": {
+                "is_required": true,
+                "name": "Complete Order",
+                "id": "action_4_1593148261073"
+            },
+            "tables": [
+                {
+                    "changes": [],
+                    "searches": [],
+                    "view_id": "action_4_1593148261073table161593148271741",
+                    "table_id": "msource_4_1593146360454",
+                    "view_name": " View 16 of Order",
+                    "table_name": "Order",
+                    "mode": "rewrite_mode",
+                    "filter_mode": "view",
+                    "filter": "AND(B2=B3,C2=C3,D2=D3)"
+                }
+            ]
+        }
+    }
+}
