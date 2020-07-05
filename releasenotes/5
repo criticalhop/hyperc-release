@@ -1,8 +1,10 @@
        HYPERC 1 BETA RELEASE NOTES
 * New releases almost every day. See <a href="https://github.com/criticalhop/hyperc-release/releases/latest">here</a>.
-* This version is slow. We are working to make
-  it fast for everyone. In the meanwhile we're
-  providing accelerators per commercial request.
+* If you like this version to run faster, 
+  please message us, as we're also providing
+  accelerators per commercial requests.
+* If you've ever used Excel, 
+  you already know how to use HyperC. 
 * Plain numbers by default are in range 0-100
   to use different range, write desired number
   in any cell or formula. E.g. -5 and 200
