@@ -3,8 +3,6 @@
 * If you like this version to run faster, 
   please message us, as we're also providing
   accelerators per commercial requests.
-* If you've ever used Excel, 
-  you already know how to use HyperC. 
 * Plain numbers by default are in range 0-100
   to use different range, write desired number
   in any cell or formula. E.g. -5 and 200
