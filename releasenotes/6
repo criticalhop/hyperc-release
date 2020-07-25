@@ -1,0 +1,11 @@
+       HYPERC 1 BETA RELEASE NOTES
+* New releases almost every day. See <a href="https://github.com/criticalhop/hyperc-release/releases/latest">here</a>.
+* Added support for Google Sheets
+* Multiple AI fixes
+* Plain numbers by default are in range 0-100
+  to use different range, write desired number
+  in any cell or formula. E.g. -5 and 200
+* Formulas supported: AND, +, -, *, /, =, <, >, <>
+* Floating point numbers like 0.1 not yet supported
+
+Please request support at <a href="mailto:support@hyperc.com">support@hyperc.com</a>
